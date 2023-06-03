@@ -5,9 +5,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
@@ -17,7 +14,7 @@ import org.junit.runner.RunWith;
             },
             features = "src/test/resources/features",
             glue = "stepdefinitions",
-            tags = "@ae",
+            tags = "@ltf",
 
             dryRun = false     // eksik adim varmi diye kontrol ettigimizde "false" i "true" yapiyoruz.
             // sonuc pass yazsada cikan sonuc test'in degil, yapilandirma nin yapildini gosterir.
@@ -25,3 +22,5 @@ import org.junit.runner.RunWith;
 
     public class Runner {
 }
+
+
